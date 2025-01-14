@@ -1,0 +1,18 @@
+﻿
+@{
+    List<object> menuItems = new List<object>();
+    menuItems.Add(new { text = "Dashboard", iconCss = "fa-solid da-dashboard", url = "/" });
+    menuItems.Add(new { text = "Categories", iconCss="fa-solid da-folder-closed" , url = "/Category" });
+    menuItems.Add(new { text = "Transactions", iconCss = "fa-solid da-arrow-right-arrow-left", url = "/Transaction" });
+}
+
+
+
+
+
+<ejs-sidebar id="sidebar" width="290px">
+    <e-content-template>
+        <ejs-menu id="menu" items="menuItems" orientation="Vertical"></ejs-menu>
+    </e-content-template>
+</ejs-sidebar>
+
